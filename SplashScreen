@@ -1,0 +1,92 @@
+Xml Code=====
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/SpallsScreen"
+    android:gravity="bottom|center"
+    tools:context=".SplashscreenActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBarSp"
+        android:progressTint="#b919a9"
+        android:progressBackgroundTint="#3a29be"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_margin="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+
+Java Code=========
+
+public class SplashscreenActivity extends AppCompatActivity {
+    private ProgressBar progressBar;
+    private int progress;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //Full Screen code= Spalsh Screen
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
+        setContentView(R.layout.activity_splashscreen2);
+
+        progressBar = findViewById(R.id.progressBarSp);
+
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+            doWork ();
+            strtApp();
+
+            }
+        });
+        thread.start();
+    }
+
+    public  void doWork(){
+        for (progress=20; progress<=100;progress = progress+20){
+
+            try {
+                Thread.sleep(1000);
+                progressBar.setProgress(progress);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+
+    }
+
+    public void  strtApp(){
+        Intent intent = new Intent(SplashscreenActivity.this,Signup.class);
+        startActivity(intent);
+        finish();
+    }
+}
+
+Styles.xml ==========
+   <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+   
+   manifest xmlns=========================
+   
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
