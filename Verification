@@ -4,59 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/decotor"
-    android:orientation="vertical"
     android:gravity="center"
-    tools:context=".VarificationActivity">
-
-    <TextView
-        android:text="Varification code"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    android:orientation="vertical"
+    android:background="@drawable/taniry"
+    tools:context=".HomeActivity">
 
     <ImageView
-
         android:src="@drawable/karigorbanglapng"
-        android:layout_margin="20dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp" />
+        android:layout_margin="30dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <EditText
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:hint="Username"
+        android:textColor="#15ecd3"
+        android:id="@+id/userID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:hint="Password"
+        android:textColor="#23ded4"
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
-        android:text="We send to text you the OTP to authenticate your account"
-        android:textSize="22sp"
-        android:textColor="#03f247"
-        android:textStyle="bold"
-        android:padding="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
+        android:id="@+id/forgetPasswordTxtV"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText
-        android:textStyle="bold"
-        android:hint=" Code"
-        android:id="@+id/varificationaccount"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/VarifactionButtom"
-        android:text="Submit"
-        android:textStyle="bold"
-        android:textColor="#3407d7"
-        android:textSize="20sp"
-        android:padding="10dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginLeft="70dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        />
 
+    <android.support.v7.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_centerHoriontal= "true"
+        app:cardBackgroundColor="#1dd730"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="20dp"
+        android:layout_marginTop="30dp">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/loginTextView"
+                android:text="Login"
+                android:textColor="#1e66d2"
+                android:textSize="25sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Dont Have an Account?"
+            android:textSize="15sp"
+            android:textColor="#101010"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/signupTextView"
+            android:text="Sign Up "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#f5f3f3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 
 </LinearLayout>
