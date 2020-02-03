@@ -4,42 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/woodendoor"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".ServicerequestActivity">
 
     <ImageView
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/karigorbanglapng"
         android:layout_margin="20dp"
         android:layout_width="100dp"
         android:layout_height="100dp" />
 
     <TextView
+        android:layout_marginTop="35sp"
         android:textStyle="bold"
         android:textSize="35sp"
-        android:textColor="#d2c104"
+        android:textColor="#2be1ea"
         android:text="Your Service Request"
         android:id="@+id/textviewattemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-
-
-
-    <EditText
-        android:inputType="text"
-        android:textSize="16sp"
+    <TextView
         android:textStyle="bold"
-        android:layout_marginBottom="20dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:drawableLeft="@drawable/ic_action_passwoed"
-        android:hint="What Type of your Service Need"
-        android:textColor="#FFFFFFFF"
-        android:id="@+id/ServiceNeedreq"
-        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:textColor="#7fe929"
+        android:text="What Type of your Service Need"
+        android:id="@+id/texviewServiceNeed"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+
+    <Spinner
+        android:id="@+id/spinnerServiceNeed"
+        android:padding="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+
+
+
 
     <TextView
         android:textStyle="bold"
@@ -50,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <Spinner
-        android:id="@+id/SerciceRequest"
+        android:id="@+id/spinnerSerciceRequest"
         android:padding="10dp"
         android:layout_marginRight="50dp"
         android:layout_marginLeft="50dp"
@@ -66,7 +74,7 @@
         android:layout_marginBottom="20dp"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:drawableLeft="@drawable/ic_action_passwoed"
+
         android:hint="Your Name"
         android:textColor="#FFFFFFFF"
         android:id="@+id/Servicereqname"
@@ -80,7 +88,7 @@
         android:layout_marginBottom="20dp"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:drawableLeft="@drawable/ic_action_passwoed"
+
         android:hint="Phone Number"
         android:textColor="#FFFFFFFF"
         android:id="@+id/ServicereqNumber"
@@ -94,15 +102,11 @@
         android:textStyle="bold"
         android:textSize="20sp"
         android:padding="10dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginLeft="70dp"
-        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-
-
 </LinearLayout>
-
 
 <resources>
     <string name="app_name">Karigor</string>
