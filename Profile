@@ -6,419 +6,738 @@
     android:layout_height="match_parent"
     tools:context=".ProfileActivity">
 
-    <RelativeLayout
-        android:id="@+id/rellay"
-        android:background="@drawable/latherps1"
-        android:layout_width="match_parent"
-        android:paddingBottom="10dp"
-        android:layout_height="300dp">
 
 
 
 
         <RelativeLayout
-            android:id="@+id/ImageUser"
-            android:gravity="center"
-            android:layout_centerHorizontal="true"
+            android:id="@+id/rellay"
+            android:background="@drawable/latherps1"
             android:layout_width="match_parent"
-            android:layout_height="300dp">
+            android:paddingBottom="10dp"
+            android:layout_height="350dp">
 
 
-            <TextView
-                android:id="@+id/ProfileKa"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:id="@+id/ImageUser"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+               >
+
+
+                <TextView
+                    android:id="@+id/ProfileKa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="210dp"
+                    android:layout_marginLeft="170dp"
+                    android:text="Profile"
+                    android:textColor="#000"
+                    android:textSize="35sp"
+                    android:textStyle="bold"></TextView>
+
+
+                <ImageView
+                    android:id="@+id/imageViewProfile"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="220dp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="170dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/labourkarigor" />
+
+                <ImageButton
+                    android:id="@+id/BtprofileSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/ic_action_edit">
+
+                </ImageButton>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/logoProfile"
+            android:layout_below="@id/rellay"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-               android:layout_marginBottom="210dp"
-                android:text="Profile"
-                android:textColor="#000"
-                android:textSize="35sp"
-                android:textStyle="bold"></TextView>
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
 
-            <ImageView
-                android:id="@+id/imageViewProfile"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_marginTop="170dp"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/labourkarigor" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/facebook">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="45k"
+                        android:textColor="#000"
+                        android:textSize="25sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/twitter">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="45k"
+                        android:textColor="#000"
+                        android:textSize="25sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/proName"
+            android:layout_below="@id/logoProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/Profileinfo"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Username"
+                                    android:textColor="#000"
+                                    android:textSize="25sp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Shoriful Islam"
+                                    android:textColor="#000"
+                                    android:textSize="25sp">
+
+                                </TextView>
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:background="#78D60B"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp">
+
+                    </View>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/Profilework"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:paddingLeft="49dp"
+                                android:orientation="vertical">
+
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Work"
+
+                                    android:textColor="#000"
+                                    android:textSize="25sp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+
+                                android:orientation="vertical">
+
+
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Ac, Gas"
+                                    android:textColor="#000"
+                                    android:textSize="25sp">
+
+                                </TextView>
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:background="#78D60B"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp">
+
+                    </View>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/Profilstatus"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Work Area"
+                                    android:textColor="#000"
+                                    android:textSize="25sp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Dhaka"
+                                    android:textColor="#000"
+                                    android:textSize="25sp">
+
+                                </TextView>
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:background="#78D60B"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp">
+
+                    </View>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/ProfileExperiance"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Work Exp"
+                                    android:textColor="#000"
+                                    android:textSize="25sp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:text="s"
+                                    android:textColor="#000"
+                                    android:textSize="25sp">
+
+                                </TextView>
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:background="#78D60B"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp">
+
+                    </View>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/Profilcontact"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="19dp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Status"
+                                    android:textColor="#000"
+                                    android:textSize="25sp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <Switch
+                                    android:id="@+id/ProSwId"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#F02212"
+                                    android:textColor="#2337A8">
+
+                                </Switch>
+
+
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:background="#78D60B"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp">
+
+                    </View>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/ProfileContact"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:layout_marginRight="10dp"
+                                android:orientation="vertical">
+
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Contact"
+                                    android:textColor="#000"
+                                    android:textSize="25sp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:text="01600011199"
+                                    android:textColor="#000"
+                                    android:textSize="25sp">
+
+                                </TextView>
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:background="#78D60B"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp">
+
+                    </View>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
 
 
         </RelativeLayout>
 
-    </RelativeLayout>
 
-<LinearLayout
-    android:id="@+id/logoProfile"
-    android:layout_below="@id/rellay"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:paddingBottom="5dp"
-        android:paddingTop="5dp">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="21dp"
-                android:layout_height="25dp"
-                android:src="@drawable/facebook">
 
-            </ImageView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:text="45k"
-                android:textColor="#000"
-                android:textSize="25sp">
-
-            </TextView>
-
-        </LinearLayout>
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:paddingBottom="5dp"
-        android:paddingTop="5dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="21dp"
-                android:layout_height="25dp"
-                android:src="@drawable/twitter">
-
-            </ImageView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:text="45k"
-                android:textColor="#000"
-                android:textSize="25sp">
-
-            </TextView>
-
-        </LinearLayout>
-
-
-    </RelativeLayout>
-
-
-
-</LinearLayout>
-
-<RelativeLayout
-    android:layout_below="@id/logoProfile"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <LinearLayout
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_margin="5dp"
-                android:text="Username"
-                android:padding="5dp"
-                android:textSize="22sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="90dp"
-                android:gravity="center"
-                android:padding="5dp"
-                android:text="Shoriful Islam"
-                android:textSize="22sp">
-            </TextView>
-            <View
-
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_marginTop="15dp"
-                android:background="#38E43F">
-            </View>
-
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_margin="5dp"
-                android:text="Work"
-                android:padding="5dp"
-                android:textSize="22sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="90dp"
-                android:gravity="center"
-                android:padding="5dp"
-                android:text="Shoriful Islam"
-                android:textSize="22sp">
-            </TextView>
-            <View
-
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_marginTop="15dp"
-                android:background="#38E43F">
-            </View>
-
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_margin="5dp"
-                android:text="Username"
-                android:padding="5dp"
-                android:textSize="22sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="90dp"
-                android:gravity="center"
-                android:padding="5dp"
-                android:text="Shoriful Islam"
-                android:textSize="22sp">
-            </TextView>
-            <View
-
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_marginTop="15dp"
-                android:background="#38E43F">
-            </View>
-
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_margin="5dp"
-                android:text="Username"
-                android:padding="5dp"
-                android:textSize="22sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="90dp"
-                android:gravity="center"
-                android:padding="5dp"
-                android:text="Shoriful Islam"
-                android:textSize="22sp">
-            </TextView>
-            <View
-
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_marginTop="15dp"
-                android:background="#38E43F">
-            </View>
-
-        </LinearLayout>
-        <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_margin="5dp"
-            android:text="Username"
-            android:padding="5dp"
-            android:textSize="22sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        </TextView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="90dp"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text="Shoriful Islam"
-            android:textSize="22sp">
-        </TextView>
-        <View
-
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:layout_marginTop="15dp"
-            android:background="#38E43F">
-        </View>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_margin="5dp"
-                    android:text="Username"
-                    android:padding="5dp"
-                    android:textSize="22sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                </TextView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="90dp"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="Shoriful Islam"
-                    android:textSize="22sp">
-                </TextView>
-                <View
-
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:layout_marginTop="15dp"
-                    android:background="#38E43F">
-                </View>
-
-            </LinearLayout>
-
-    </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_margin="5dp"
-                android:text="Username"
-                android:padding="5dp"
-                android:textSize="22sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="90dp"
-                android:gravity="center"
-                android:padding="5dp"
-                android:text="Shoriful Islam"
-                android:textSize="22sp">
-            </TextView>
-            <View
-
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_marginTop="15dp"
-                android:background="#38E43F">
-            </View>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_margin="5dp"
-                    android:text="Username"
-                    android:padding="5dp"
-                    android:textSize="22sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                </TextView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="90dp"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="Shoriful Islam"
-                    android:textSize="22sp">
-                </TextView>
-                <View
-
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:layout_marginTop="15dp"
-                    android:background="#38E43F">
-                </View>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-
-
-
-</RelativeLayout>
 
 
 
